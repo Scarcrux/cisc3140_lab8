@@ -1,4 +1,4 @@
-# cisc3140_lab8
+# CISC 3140 Lab 8
 
 # Assignments or deliverables
 
