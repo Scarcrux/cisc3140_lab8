@@ -1,5 +1,5 @@
-; use: (fib number)
-; returns:
+; use: (number)
+; returns: sum of series
 (define fib
   (lambda (n)
     (let fib ((i n))
