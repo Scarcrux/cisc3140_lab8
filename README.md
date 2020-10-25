@@ -1,6 +1,6 @@
 # CISC 3140 Lab 8
 
-Checks if an input string is a palindrome, returns a boolean value. Stores the string in a list, reverse the string in list form, checks if string is empty, and compares lists for equivalency.
+Checks if an input string is a palindrome, returns a boolean value. Stores the string in a list, reverses the string in a new list, and compares the lists for equivalency.
 
 ; use: (palindrome "string")
 ; returns: #t if true, #f is false
