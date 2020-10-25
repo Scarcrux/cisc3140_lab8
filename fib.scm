@@ -1,4 +1,4 @@
-; use: (number)
+; use: (fib number)
 ; returns: sum of series
 (define fib
   (lambda (n)
