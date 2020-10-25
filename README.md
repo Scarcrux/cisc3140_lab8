@@ -16,7 +16,7 @@ Returns: sum of series
 
 Checks the type of an input.
 
-Use: (input value)
+Use: (type input)
 
 Returns: input type
 
