@@ -1,0 +1,165 @@
+ ~/Downloads/Lab 8  ls
+fib.scm        palindrome.scm type.scm
+ ~/Downloads/Lab 8  scheme --load fib.scm 
+zsh: command not found: scheme
+ ✘  ~/Downloads/Lab 8  scm
+zsh: command not found: scm
+ ✘  ~/Downloads/Lab 8  which chicken
+/usr/local/bin/chicken
+ ~/Downloads/Lab 8  chicken
+CHICKEN
+(c) 2008-2020, The CHICKEN Team
+(c) 2000-2007, Felix L. Winkelmann
+Version 5.2.0 (rev 317468e4)
+macosx-unix-clang-x86-64 [ 64bit dload ptables ]
+
+Enter `chicken -help' for information on how to use the compiler,
+or try `csc' for a more convenient interface.
+
+Run `csi' to start the interactive interpreter.
+ ~/Downloads/Lab 8  scheme --load fib.scm
+zsh: command not found: scheme
+ ✘  ~/Downloads/Lab 8  ls
+fib.scm        palindrome.scm type.scm
+ ~/Downloads/Lab 8  csi fib.scm 
+CHICKEN
+(c) 2008-2020, The CHICKEN Team
+(c) 2000-2007, Felix L. Winkelmann
+Version 5.2.0 (rev 317468e4)
+macosx-unix-clang-x86-64 [ 64bit dload ptables ]
+
+Type ,? for help.
+; loading fib.scm ...
+#;1> 5
+5
+#;2> fib 12
+#<procedure (fib n)>
+#;3> 12
+#;4> fib 20
+#<procedure (fib n)>
+#;5> 20
+#;6> fib 5
+#<procedure (fib n)>
+#;7> 5
+#;8> 5
+5
+#;9> fib 5
+#<procedure (fib n)>
+#;10> 5
+#;11> ^Z
+[1]  + 52188 suspended  csi fib.scm
+ ✘ ⚙  ~/Downloads/Lab 8  chicken              
+CHICKEN
+(c) 2008-2020, The CHICKEN Team
+(c) 2000-2007, Felix L. Winkelmann
+Version 5.2.0 (rev 317468e4)
+macosx-unix-clang-x86-64 [ 64bit dload ptables ]
+
+Enter `chicken -help' for information on how to use the compiler,
+or try `csc' for a more convenient interface.
+
+Run `csi' to start the interactive interpreter.
+ ⚙  ~/Downloads/Lab 8  ls
+fib.scm        palindrome.scm type.scm
+ ⚙  ~/Downloads/Lab 8  csi palindrome.scm 
+CHICKEN
+(c) 2008-2020, The CHICKEN Team
+(c) 2000-2007, Felix L. Winkelmann
+Version 5.2.0 (rev 317468e4)
+macosx-unix-clang-x86-64 [ 64bit dload ptables ]
+
+Type ,? for help.
+; loading palindrome.scm ...
+#;1> palindrome test
+#<procedure (palindrome str)>
+#;2> 
+Error: unbound variable: test
+#;2> palindrome "test"
+#<procedure (palindrome str)>
+#;3> "test"
+#;4> (palindrome test)
+
+Error: unbound variable: test
+
+	Call history:
+
+	<syntax>	  (palindrome test)
+	<eval>	  (palindrome test)	<--
+#;4> (palindrome "test")
+#f
+#;5> (palindrome "tttt")
+#t
+#;6> (palindrome "jonoj")
+#t
+#;7> exit
+#<procedure (chicken.base#exit . rest)>
+#;8> quit
+
+Error: unbound variable: quit
+#;8> ^Z
+[2]  + 52214 suspended  csi palindrome.scm
+ ✘ ⚙  ~/Downloads/Lab 8  chicken           
+CHICKEN
+(c) 2008-2020, The CHICKEN Team
+(c) 2000-2007, Felix L. Winkelmann
+Version 5.2.0 (rev 317468e4)
+macosx-unix-clang-x86-64 [ 64bit dload ptables ]
+
+Enter `chicken -help' for information on how to use the compiler,
+or try `csc' for a more convenient interface.
+
+Run `csi' to start the interactive interpreter.
+ ⚙  ~/Downloads/Lab 8  csi fib.scm       
+CHICKEN
+(c) 2008-2020, The CHICKEN Team
+(c) 2000-2007, Felix L. Winkelmann
+Version 5.2.0 (rev 317468e4)
+macosx-unix-clang-x86-64 [ 64bit dload ptables ]
+
+Type ,? for help.
+; loading fib.scm ...
+#;1> (fib 21)
+10946
+#;2> (fib 10)
+55
+#;3> ^Z
+[3]  + 52248 suspended  csi fib.scm
+ ✘ ⚙  ~/Downloads/Lab 8  chicken
+CHICKEN
+(c) 2008-2020, The CHICKEN Team
+(c) 2000-2007, Felix L. Winkelmann
+Version 5.2.0 (rev 317468e4)
+macosx-unix-clang-x86-64 [ 64bit dload ptables ]
+
+Enter `chicken -help' for information on how to use the compiler,
+or try `csc' for a more convenient interface.
+
+Run `csi' to start the interactive interpreter.
+ ⚙  ~/Downloads/Lab 8  ls
+fib.scm        palindrome.scm type.scm
+ ⚙  ~/Downloads/Lab 8  csi type.scm 
+CHICKEN
+(c) 2008-2020, The CHICKEN Team
+(c) 2000-2007, Felix L. Winkelmann
+Version 5.2.0 (rev 317468e4)
+macosx-unix-clang-x86-64 [ 64bit dload ptables ]
+
+Type ,? for help.
+; loading type.scm ...
+#;1> (type 283)
+"Number"
+#;2> (compare 282 383)
+#t
+#;3> (compare 283 fioj)
+
+Error: unbound variable: fioj
+
+	Call history:
+
+	<syntax>	  (compare 283 fioj)
+	<eval>	  (compare 283 fioj)	<--
+#;3> (compare 283 "fioj")
+#f
+#;4> ^Z
+[4]  + 52272 suspended  csi type.scm
+ ✘ ⚙  ~/Downloads/Lab 8  
