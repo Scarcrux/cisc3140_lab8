@@ -1,5 +1,7 @@
 # CISC 3140 Lab 8
 
+The terminal log shows execution and sample use of the Scheme scripts from the Chicken interpreter.
+
 Checks if an input string is a palindrome, returns a boolean value. Stores the string in a list, reverses the string in a new list, and compares the lists for equivalency.
 
 Use: (palindrome "string")
