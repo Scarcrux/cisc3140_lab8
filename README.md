@@ -10,13 +10,13 @@ Returns: #t if true, #f is false
 
 A lambda expression that recursively evaluates a sum of series (i.e. fibonacci sequence) given a number input.
 
-Use: (number)
+Use: (fib number)
 
 Returns: sum of series
 
 Checks the type of an input.
 
-Use: (input)
+Use: (input value)
 
 Returns: input type
 
