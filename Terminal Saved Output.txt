@@ -91,11 +91,11 @@ Error: unbound variable: test
 #t
 #;6> (palindrome "jonoj")
 #t
-#;7> exit
-#<procedure (chicken.base#exit . rest)>
-#;8> quit
+#;7> (palindrome '(a b b a))
+#t
+#;8> (palindrome '(a b b b))
+#f
 
-Error: unbound variable: quit
 #;8> ^Z
 [2]  + 52214 suspended  csi palindrome.scm
  ✘ ⚙  ~/Downloads/Lab 8  chicken           
